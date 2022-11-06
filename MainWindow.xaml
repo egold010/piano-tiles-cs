@@ -1,0 +1,58 @@
+﻿<Window x:Class="PianoTilesPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PianoTilesPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Name="mainWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Name="Status">Ready</TextBlock>
+            <TextBlock Margin="5,0,5,0">RGB:</TextBlock>
+            <TextBlock Name="RGB" Width="Auto">-</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <TextBlock>Start/Stop: 'p'</TextBlock>
+            <TextBlock>Calibrate: 'f'</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,5,0">xc:</TextBlock>
+                <TextBlock Name="xCurrPos" Width="30">-</TextBlock>
+                <TextBlock Margin="5,0,5,0">yc:</TextBlock>
+                <TextBlock Name="yCurrPos" Width="30">-</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,5,0">x1:</TextBlock>
+                <TextBlock Name="x1CurrPos" Width="30">-</TextBlock>
+                <TextBlock Margin="5,0,5,0">y1:</TextBlock>
+                <TextBlock Name="y1CurrPos" Width="30">-</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,5,0">x2:</TextBlock>
+                <TextBlock Name="x2CurrPos" Width="30">-</TextBlock>
+                <TextBlock Margin="5,0,5,0">y2:</TextBlock>
+                <TextBlock Name="y2CurrPos" Width="30">-</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,5,0">x3:</TextBlock>
+                <TextBlock Name="x3CurrPos" Width="30">-</TextBlock>
+                <TextBlock Margin="5,0,5,0">y3:</TextBlock>
+                <TextBlock Name="y3CurrPos" Width="30">-</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,5,0">x4:</TextBlock>
+                <TextBlock Name="x4CurrPos" Width="30">-</TextBlock>
+                <TextBlock Margin="5,0,5,0">y4:</TextBlock>
+                <TextBlock Name="y4CurrPos" Width="30">-</TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
